@@ -1,0 +1,18 @@
+CREATE DATABASE bdproduct;
+
+USE bdproduct;
+
+
+CREATE TABLE Product (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    nameproduct VARCHAR(255) NOT NULL,
+    description VARCHAR(255),
+    quantity INT,
+    fechaVen DATE
+);
+
+INSERT INTO Product (productname, description, quantity, fechaVen) VALUES
+    ('Leche2', 'LecheGloria', 10, '2023-12-31'),
+    ('Carne1', 'Salmon', 5, '2023-11-15'),
+    ('Vegetal4', 'Lechugas', 20, '2024-02-28'),
+    ('Snack2', 'Chesse tris', 15, '2023-10-10');
